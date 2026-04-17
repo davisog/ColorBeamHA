@@ -179,7 +179,7 @@ class CbRGBLight(LightEntity):
         self._state = None
         self._attr_brightness = None
         self._previous_brightness = 255
-        self. _attr_rgb_color = None
+        self._attr_rgb_color = None
         self._attr_colorMode = None
         self._attr_supported_color_modes = None
         self._attr_unique_id = light["uuid"]
@@ -280,7 +280,7 @@ class CbRGBLight(LightEntity):
         This is the only method that should fetch new data for Home Assistant.
         """
         await self._light.update()
-        self. _attr_rgb_color = self._light.getRGB
+        self._attr_rgb_color = self._light.getRGB
         self._attr_colorMode = self.color_mode
         self._attr_supported_color_modes = self.supported_color_modes
         _LOGGER.debug(self._attr_rgb_color)

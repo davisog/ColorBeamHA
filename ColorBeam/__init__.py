@@ -9,7 +9,7 @@ from homeassistant.core import HomeAssistant
 
 from .const import DOMAIN
 from .coordinator import ColorBeamUpdateCoordinator
-import ColorBeam.pycolorbeam as pycolorbeam
+#import ColorBeam.pycolorbeam as pycolorbeam
 
 PLATFORMS = [Platform.LIGHT]
 

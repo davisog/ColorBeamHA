@@ -28,7 +28,7 @@ class ColorBeamUpdateCoordinator(DataUpdateCoordinator[dict]):
             hass,
             logger=_LOGGER,
             name=DOMAIN,
-            update_interal=timedelta(seconds=UPDATE_INTERVAL),
+            update_interval=timedelta(seconds=UPDATE_INTERVAL),
          )
         self.client = client
 
@@ -66,7 +66,7 @@ class ColorBeamBiUpdateCoordinator(DataUpdateCoordinator[dict]):
             hass,
             logger=_LOGGER,
             name=DOMAIN,
-            update_interal=timedelta(seconds=UPDATE_INTERVAL),
+            update_interval=timedelta(seconds=UPDATE_INTERVAL),
          )
         self.client = client
 
@@ -103,7 +103,7 @@ class ColorBeamRGBUpdateCoordinator(DataUpdateCoordinator[dict]):
             hass,
             logger=_LOGGER,
             name=DOMAIN,
-            update_interal=timedelta(seconds=UPDATE_INTERVAL),
+            update_intveral=timedelta(seconds=UPDATE_INTERVAL),
          )
         self.client = client
 
